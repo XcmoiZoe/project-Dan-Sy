@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card with Custom Circle</title>
+  <style>
+   
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background-color: #060415; /* Black with transparency */
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .circle {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%) rotate(0.95deg); /* Rotate by 0.95 degrees */
+      width: 260.34px;  /* Custom width */
+      height: 250.23px; /* Custom height */
+      background-color: #331EB6;
+      border-radius: 50%;
+      opacity: 0.5; /* Opacity 0.5 */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="circle"></div>
+    <h2 style="color: white;">Card Content</h2>
+    <p style="color: white;">This is a sample card with a custom circle.</p>
+  </div>
+
+</body>
+</html>

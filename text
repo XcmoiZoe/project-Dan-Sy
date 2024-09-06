@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Bootstrap Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        position: relative;
+        margin: 10px 0;
+        text-align: center;
+        border: 0.5px solid white;
+        height: 650px;
+        border-radius: 16px;
+        color: white;
+        overflow: hidden;
+        display: flex;
+        padding: 32px 18px;
+        flex-direction: column;
+        background: none;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          0.95deg,
+          rgba(51, 30, 182, 0.5) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        z-index: 1;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        z-index: 2;
+        position: relative;
+      }
+
+      .card-content {
+        margin: -90px 15px 50px 15px; /* Adjust the margin as needed */
+        z-index: 2;
+        position: relative;
+      }
+
+      .card h3 {
+        margin: 50px 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+      }
+
+      .card p {
+        margin: 10px 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #929292;
+      }
+
+      @media (max-width: 767px) {
+        .card {
+          flex-direction: column;
+          height: 20%;
+          align-items: center;
+        }
+      }
+      .cont {
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img
+              style="bottom: 30%; scale: 130%; transform: rotate(22deg)"
+              src="https://pouch.jumpshare.com/preview/507p0HF9xwE-NKuQanp0ZCjcbDnvDra0u28R0SbgmM6rL6GOaiYsTyuWhwO8PeSXRDECdJF4RBWJ0mu7jH977Hp4-uZzKO2CJGDBnK1q57M"
+              alt="Image"
+            />
+
+            <div class="card-content">
+              <h3>Certified Professionals</h3>
+              <p>
+                Our team of certified professionals ensure top-notch expertise
+                and quality.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <div style="top: 10%" class="card-content two">
+              <h3>Cost-Effective</h3>
+              <p>
+                Experience a cost-effective solution that delivers maximum value
+                without breaking the bank.
+              </p>
+            </div>
+            <img
+              style="scale: 150%; margin-top: 70%"
+              src="https://pouch.jumpshare.com/preview/4O_qN1VtA12C_wxoyidezkbYOZys-wgr4Po_HNQ0XuyapCpfbS26-foWQfSYsv5-RDECdJF4RBWJ0mu7jH977Et03uMsecNn8JAqFJmAVoI"
+              alt="Image"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img
+              style="bottom: 15%; scale: 100%; left: 50px"
+              src="https://pouch.jumpshare.com/preview/qs_3j9uXnyL8a2mZmtjHSSMiG7Y_TpgAOwsPuoFAjTJcMJvt2WNYr86NN5ZBFylvuVcrPERzsCp_gB8vyOyzWjr85FpDpy_BglELkjA_IZE"
+              alt="Image"
+            />
+            <div class="card-content">
+              <h3>Future-Proof Solutions</h3>
+              <p>
+                Invest in future-proof solutions designed to evolve with your
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+https://static.wixstatic.com/shapes/61dad4_fee9e4500d8e4724ad8edce028e94d06.svg -40
+
+https://static.wixstatic.com/shapes/61dad4_b2350110a97749a4a52205a19c0e6496.svg -51
+
+
+https://static.wixstatic.com/shapes/61dad4_5bfaf134f01b43e095555cf7d448b015.svg -asset 30

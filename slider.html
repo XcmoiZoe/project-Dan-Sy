@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider with 4 Cards</title>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+    .slider {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.card {
+    background: #2D1B44;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: filter 0.5s ease, transform 0.5s ease;
+    width: 770px;
+    height: 400px; /* Card height to fit the content */
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+    justify-content: center;
+    
+}
+
+.image {
+    width: 100%;
+    height: 130px; /* Fixed height for the image container */
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%; /* Ensure the image takes the full height of the container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.stars {
+    position: relative;
+    right:150px;
+    color:#fff;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.content {
+    font-family: Inter, sans-serif; /* Apply font family */
+    font-size: 17px; /* Apply font size */
+    font-weight: 400; /* Apply font weight */
+    line-height: 29px; /* Apply line height */
+    text-align:left; /* Apply text alignment */
+    color: #ffffff;
+    padding: 25px;
+   
+    
+}
+
+.footer {
+    position: relative;
+    bottom: -20px;
+    right:70px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Inter, sans-serif; /* Apply font family */
+    font-size: 19px; /* Apply font size */
+    font-weight: 400; /* Apply font weight */
+    line-height: 16.05px; /* Apply line height */
+    padding: 3px;
+}
+
+/* Always blur and scale down non-center slides */
+.slick-slide {
+    filter: blur(2px);
+    transform: scale(0.8);
+    
+}
+
+
+/* Center slide - No blur, enlarge */
+.slick-center {
+    filter: blur(0);
+    transform: scale(1); /* Increase the scale to make the center slide larger */
+    
+}
+.slick-center .stars {
+    color:rgba(255, 170, 6, 1);
+}
+
+
+@media only screen and (max-width: 768px)  {
+    .footer {
+    position: relative;
+    bottom: 10px;
+    right:30px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Inter, sans-serif; /* Apply font family */
+    font-size: 11px; /* Apply font size */
+    font-weight: 400; /* Apply font weight */
+    line-height: 17.05px; /* Apply line height */
+    padding: 15px;
+}
+.content {
+    font-family: Inter, sans-serif; /* Apply font family */
+    font-size: 11px; /* Apply font size */
+    font-weight: 400; /* Apply font weight */
+    line-height: 16.05px; /* Apply line height */
+    text-align:left; /* Apply text alignment */
+    color: #ffffff;
+    padding: 0px 10px;
+   
+    
+}
+.image {
+    width: 100%;
+    height: 100px; /* Fixed height for the image container */
+    overflow: hidden;
+}
+.card {
+    background: #2D1B44;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: filter 0.5s ease, transform 0.5s ease;
+    width: 720px;
+    height: 250px; /* Card height to fit the content */
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.stars {
+    position: relative;
+    right:80px;
+    color:#fff;
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+}
+
+
+
+
+@media (max-width: 678px){
+  .stars {
+    position: relative;
+    right:120px;
+    color:rgba(255, 170, 6, 1);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.content {  
+    font-size: 13px; /* Apply font size */
+    position: relative;
+    bottom: -20px;
+  }
+  .footer{
+    right:100px;
+    position: relative;
+    bottom: -40px;
+  }
+  .card{
+    height:300px;
+  }
+      }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+        <div class="card">
+            <div class="image">
+                <img src="https://static.wixstatic.com/shapes/61dad4_5bfaf134f01b43e095555cf7d448b015.svg" alt="Slide 1">
+            </div>
+            <div class="stars">★★★★☆</div>
+            <div class="content">Working with Cerena Solutions has been a fantastic experience for us. Their skill in managing complex integrations and providing top-notch support was evident throughout the entire process.</div>
+            <div class="footer">A Media Company in Australia</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://static.wixstatic.com/shapes/61dad4_b2350110a97749a4a52205a19c0e6496.svg " alt="Slide 2">
+            </div>
+            <div class="stars">★★★☆☆</div>
+            <div class="content">Working with Cerena Solutions has been a fantastic experience for us. Their skill in managing complex integrations and providing top-notch support was evident throughout the entire process.</div>
+            <div class="footer">A Media Company in Australia</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://static.wixstatic.com/shapes/61dad4_fee9e4500d8e4724ad8edce028e94d06.svg" alt="Slide 3">
+            </div>
+            <div class="stars">★★★★★</div>
+            <div class="content">Working with Cerena Solutions has been a fantastic experience for us. Their skill in managing complex integrations and providing top-notch support was evident throughout the entire process.</div>
+            <div class="footer">A Media Company in Australia</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://static.wixstatic.com/shapes/61dad4_b2350110a97749a4a52205a19c0e6496.svg" alt="Slide 4">
+            </div>
+            <div class="stars">★★☆☆☆</div>
+            <div class="content">Working with Cerena Solutions has been a fantastic experience for us. Their skill in managing complex integrations and providing top-notch support was evident throughout the entire process.</div>
+            <div class="footer">A Media Company in Australia</div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+    
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '0px',
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 678, // or any desired width for mobile
+                    settings: {
+                        slidesToShow: 1, // Show only one slide on mobile
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+</body>
+</html>
